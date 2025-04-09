@@ -19,9 +19,11 @@ def support(request):
 def contacts(request):
     return render(request, 'contacts.html')
 
-def about(request):
-    context = {'company_name': 'Моя Компания', 'year': 2025}
-    return render(request, 'about.html', context)
+def about_team(request):
+    return render(request, 'about_team.html')
+
+def about_history(request):
+    return render(request, 'about_history.html')
 
 def students_list(request):
     students = Student.objects.all()

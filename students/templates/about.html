@@ -2,5 +2,9 @@
 {% block title %}О нас - Мой сайт{% endblock %}
 {% block content %}
     <h1>О нас</h1>
+    <nav>
+        <a href="{% url 'about_team' %}">Команда</a> |
+        <a href="{% url 'about_history' %}">История</a>
+    </nav>
     <p>Информация о компании {{ company_name }}, основана в {{ year }} году.</p>
 {% endblock %}
